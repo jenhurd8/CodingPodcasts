@@ -7,34 +7,40 @@
     tools:context=".MainActivity"
     android:orientation="vertical"
     android:weightSum="5">
-    
-
+    <TextView
+        android:id="@+id/offHeap"
+        android:text="@string/offHeap"
+        style="@style/PodcastBlockStyle"
+        android:textColor="@color/white"
+        android:background="@color/darkSlateGray"
+        />
+    <TextView
+        android:id="@+id/codeNewbie"
+        android:text="@string/codeNewbie"
+        style="@style/PodcastBlockStyle"
+        android:textColor="@color/whiteSmoke"
+        android:background="@color/mediumBlue"
+        />
+    <TextView
+        android:id="@+id/fcc"
+        android:text="@string/fcc"
+        style="@style/PodcastBlockStyle"
+        android:textColor="@color/white"
+        android:background="@color/darkGreen"
+        />
+    <TextView
+        android:id="@+id/javaPubHouse"
+        android:text="@string/javaPubHouse"
+        style="@style/PodcastBlockStyle"
+        android:textColor="@color/darkSlateGray"
+        android:background="@color/chocolate"
+        />
     <TextView
         android:id="@+id/syntax"
         android:text="@string/syntax"
         style="@style/PodcastBlockStyle"
         android:textColor="@color/gold"
         android:background="@color/darkSlateGray"
-         />
-    <TextView
-        android:id="@+id/codeNewbie"
-        android:text="@string/codeNewbie"
-        style="@style/PodcastBlockStyle"
-        />
-    <TextView
-        android:id="@+id/javaPubHouse"
-        android:text="@string/javaPubHouse"
-        style="@style/PodcastBlockStyle"
-        />
-    <TextView
-        android:id="@+id/offHeap"
-        android:text="@string/offHeap"
-        style="@style/PodcastBlockStyle"
-        />
-    <TextView
-        android:id="@+id/fcc"
-        android:text="@string/fcc"
-        style="@style/PodcastBlockStyle"
         />
 
 </LinearLayout>
