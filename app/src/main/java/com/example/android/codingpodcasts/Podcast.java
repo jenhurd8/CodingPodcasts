@@ -6,18 +6,20 @@ public class Podcast {
     private String mTitle;
     private String mDate;
 
-    /**Create a podcast object**/
+    /**
+     * Create a podcast object
+     **/
 
-    public Podcast(String title, String date){
+    public Podcast(String title, String date) {
         mTitle = title;
         mDate = date;
     }
 
-    public String getTitle(){
+    public String getTitle() {
         return mTitle;
     }
 
-    public String getDate(){
+    public String getDate() {
         return mDate;
     }
 }

@@ -19,23 +19,23 @@
         <activity
             android:name=".OffHeapActivity"
             android:label="@string/offHeap"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".CodeNewbieActivity"
             android:label="@string/codeNewbie"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".FccActivity"
             android:label="@string/fcc"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".JavaPubHouseActivity"
             android:label="@string/javaPubHouse"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".SyntaxActivity"
             android:label="@string/syntax"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>
