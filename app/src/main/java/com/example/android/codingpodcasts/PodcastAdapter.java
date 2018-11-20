@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -20,11 +21,11 @@ public class PodcastAdapter extends ArrayAdapter<Podcast> {
         View listItemView = convertView;
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.list_item, parent, false);
+                    R.layout.activity_syntax, parent, false);
         }
         Podcast currentPodcast = getItem(position);
 
-        TextView podcastTextView = (TextView) listItemView.findViewById(R.id.podcast_text_view);
+        TextView podcastTextView = (TextView) listItemView.findViewById(R.id.list);
         podcastTextView.setText(currentPodcast.getTitle());
 
         return listItemView;
