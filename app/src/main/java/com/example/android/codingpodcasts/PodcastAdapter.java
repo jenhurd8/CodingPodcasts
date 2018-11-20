@@ -21,11 +21,11 @@ public class PodcastAdapter extends ArrayAdapter<Podcast> {
         View listItemView = convertView;
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.activity_syntax, parent, false);
+                    R.layout.list_item, parent, false);
         }
         Podcast currentPodcast = getItem(position);
 
-        TextView podcastTextView = (TextView) listItemView.findViewById(R.id.list);
+        TextView podcastTextView = (TextView) listItemView.findViewById(R.id.textView_title);
         podcastTextView.setText(currentPodcast.getTitle());
 
         return listItemView;

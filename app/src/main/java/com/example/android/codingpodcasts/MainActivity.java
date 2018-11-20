@@ -1,5 +1,6 @@
 package com.example.android.codingpodcasts;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -24,6 +25,18 @@ public class MainActivity extends AppCompatActivity {
                 Intent syntaxIntent = new Intent(MainActivity.this, SyntaxActivity.class);
 
                 startActivity(syntaxIntent);
+            }
+        });
+
+        TextView fcc = (TextView) findViewById(R.id.fcc);
+
+        fcc.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent fccIntent = new Intent(MainActivity.this, FccActivity.class);
+
+                startActivity(fccIntent);
             }
         });
     }

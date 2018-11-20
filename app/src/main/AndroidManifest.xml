@@ -16,9 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".SyntaxActivity"
             android:label="@string/syntax"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".FccActivity"
+            android:label="@string/fcc"
             android:parentActivityName=".MainActivity"/>
     </application>
 
