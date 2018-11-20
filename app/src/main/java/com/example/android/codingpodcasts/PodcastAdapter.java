@@ -25,8 +25,11 @@ public class PodcastAdapter extends ArrayAdapter<Podcast> {
         }
         Podcast currentPodcast = getItem(position);
 
-        TextView podcastTextView = (TextView) listItemView.findViewById(R.id.textView_title);
-        podcastTextView.setText(currentPodcast.getTitle());
+        TextView podcastTitle = (TextView) listItemView.findViewById(R.id.textView_title);
+        podcastTitle.setText(currentPodcast.getTitle());
+
+        TextView podcastDate = (TextView) listItemView.findViewById(R.id.textView_date);
+        podcastDate.setText(currentPodcast.getDate());
 
         return listItemView;
     }

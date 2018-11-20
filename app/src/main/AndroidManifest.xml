@@ -16,14 +16,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
-            android:name=".SyntaxActivity"
-            android:label="@string/syntax"
+            android:name=".OffHeapActivity"
+            android:label="@string/offHeap"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".CodeNewbieActivity"
+            android:label="@string/codeNewbie"
             android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".FccActivity"
             android:label="@string/fcc"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".JavaPubHouseActivity"
+            android:label="@string/javaPubHouse"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".SyntaxActivity"
+            android:label="@string/syntax"
             android:parentActivityName=".MainActivity"/>
     </application>
 

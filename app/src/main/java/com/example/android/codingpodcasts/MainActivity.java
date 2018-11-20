@@ -16,15 +16,27 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
-        TextView syntax = (TextView) findViewById(R.id.syntax);
+        TextView offHeap = (TextView) findViewById(R.id.offHeap);
 
-        syntax.setOnClickListener(new OnClickListener() {
+        offHeap.setOnClickListener(new OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                Intent syntaxIntent = new Intent(MainActivity.this, SyntaxActivity.class);
+                Intent offHeapIntent = new Intent(MainActivity.this, OffHeapActivity.class);
 
-                startActivity(syntaxIntent);
+                startActivity(offHeapIntent);
+            }
+        });
+
+        TextView codeNewbie = (TextView) findViewById(R.id.codeNewbie);
+
+        codeNewbie.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent codeNewbieIntent = new Intent(MainActivity.this, CodeNewbieActivity.class);
+
+                startActivity(codeNewbieIntent);
             }
         });
 
@@ -37,6 +49,30 @@ public class MainActivity extends AppCompatActivity {
                 Intent fccIntent = new Intent(MainActivity.this, FccActivity.class);
 
                 startActivity(fccIntent);
+            }
+        });
+
+        TextView javaPubHouse = (TextView) findViewById(R.id.javaPubHouse);
+
+        javaPubHouse.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent javaPubHouseIntent = new Intent(MainActivity.this, JavaPubHouseActivity.class);
+
+                startActivity(javaPubHouseIntent);
+            }
+        });
+
+        TextView syntax = (TextView) findViewById(R.id.syntax);
+
+        syntax.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent syntaxIntent = new Intent(MainActivity.this, SyntaxActivity.class);
+
+                startActivity(syntaxIntent);
             }
         });
     }

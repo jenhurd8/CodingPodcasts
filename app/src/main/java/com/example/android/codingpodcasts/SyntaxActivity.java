@@ -15,14 +15,14 @@ public class SyntaxActivity extends AppCompatActivity{
 
         //ArrayList of podcasts
         ArrayList<Podcast> podcasts = new ArrayList<Podcast>();
-        podcasts.add(new Podcast("test title 1"));
-        podcasts.add(new Podcast("test title 2"));
-        podcasts.add(new Podcast("test title 3"));
-        podcasts.add(new Podcast("test title 4"));
-        podcasts.add(new Podcast("test title 5"));
-        podcasts.add(new Podcast("test title 6"));
-        podcasts.add(new Podcast("test title 7"));
-        podcasts.add(new Podcast("test title 8"));
+        podcasts.add(new Podcast("test title 1", "Nov 19, 2018"));
+        podcasts.add(new Podcast("test title 2", "Nov 19, 2018"));
+        podcasts.add(new Podcast("test title 3", "Nov 19, 2018"));
+        podcasts.add(new Podcast("test title 4", "Nov 19, 2018"));
+        podcasts.add(new Podcast("test title 5", "Nov 19, 2018"));
+        podcasts.add(new Podcast("test title 6", "Nov 19, 2018"));
+        podcasts.add(new Podcast("test title 7", "Nov 19, 2018"));
+        podcasts.add(new Podcast("test title 8", "Nov 19, 2018"));
 
         PodcastAdapter adapter = new PodcastAdapter(this, podcasts);
 
